@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Verificación para Administradores - Labs51</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #1a1a2e;
+            border-bottom: 2px solid #a45cff;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            display: flex;
+            align-items: center;
+        }
+        input[type="checkbox"] {
+            margin-right: 15px;
+            width: 20px;
+            height: 20px;
+            accent-color: #a45cff;
+        }
+        label {
+            font-weight: 500;
+        }
+        .instructions {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 5px;
+            padding-left: 35px;
+            background-color: transparent;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Checklist de Configuración para Administradores de Labs51</h1>
+    <p>Sigue estos pasos para asegurarte de que tu tienda esté completamente configurada y lista para vender.</p>
+
+    <ul>
+        <li>
+            <input type="checkbox" id="step1">
+            <label for="step1">Conectar con Supabase</label>
+        </li>
+        <li class="instructions">
+            Abre la tienda por primera vez e ingresa la URL de tu proyecto y la clave pública (anon key) de Supabase.
+        </li>
+
+        <li>
+            <input type="checkbox" id="step2">
+            <label for="step2">Ejecutar el Script SQL de la Base de Datos</label>
+        </li>
+        <li class="instructions">
+            Ve al panel de Admin &rarr; Configuración. Copia el script SQL y ejecútalo en el Editor SQL de tu proyecto de Supabase para crear todas las tablas necesarias.
+        </li>
+
+        <li>
+            <input type="checkbox" id="step3">
+            <label for="step3">Crear Cuentas de Administrador</label>
+        </li>
+        <li class="instructions">
+            En tu panel de Supabase, ve a Authentication &rarr; Users y crea las cuentas para los administradores que gestionarán la tienda.
+        </li>
+        
+        <li>
+            <input type="checkbox" id="step4">
+            <label for="step4">Configurar los Datos del Negocio</label>
+        </li>
+        <li class="instructions">
+            En Admin &rarr; Config
